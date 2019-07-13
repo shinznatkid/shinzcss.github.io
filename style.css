@@ -1,0 +1,154 @@
+html, body {
+  font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+}
+h2 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+h3 {
+  font-weight: 300;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+  background-image: url('https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+    background-size: cover;
+}
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,.3);
+    color: white;
+  transition: all 0.125s ease-in-out;
+}
+.navbar:hover {
+    background: rgba(0,0,0,.7);
+}
+.navbar .brand {
+  font-size: 1.2rem;
+}
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  min-width: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+  transition: all 0.225s ease-in-out;
+}
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*   background: rgba(255,255,255,0.7); */
+  background: white;
+}
+.container.gray {
+  background: #f3f3f3;
+}
+.container > h2 {
+  text-align: center;
+}
+
+.work {
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 800px;
+  display: flex;
+}
+.content {
+  width: 45%;
+  padding: 20px;
+}
+.btn-detail {
+  display: inline-block;
+  padding: 10px;
+  background: #2b546f;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 80px;
+  text-align: center;
+  transition: all 0.125s ease-in-out;
+}
+.btn-detail:hover {
+/*   text-decoration: underline; */
+  background: #296e9c;
+  
+}
+.image {
+  width: 55%;
+}
+.image > img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.gallery > img {
+  flex-basis: 300px;
+  height: 200px;
+  object-fit: cover;
+  flex-grow: 1;
+}
+.container.gray {
+    padding-bottom: 0;
+}
+.container.footer {
+  background: #222;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.copyright {
+  color: #999;
+  font-size: 0.85rem;
+}
+.design-by {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+}
+.author {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .content > h3 {
+    text-align: center;
+    font-weight: normal;
+  }
+  .work {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .content {
+    width: 100%;
+    order: 2;
+  }
+  .image {
+    width: 100%;
+    order: 1;
+  }
+}
